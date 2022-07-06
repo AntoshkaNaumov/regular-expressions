@@ -46,6 +46,6 @@ for i in contacts_list:
     for page in contacts_list:
       if page not in contact_list:
         contact_list.append(page)
-    #print(contact_list)```
+    #print(contact_list)
 
 writing_csv_file(contact_list)
