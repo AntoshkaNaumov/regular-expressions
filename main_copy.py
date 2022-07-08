@@ -16,8 +16,8 @@ for page in contacts_list:
   contacts_list_new.append(page_list)
   #print(contacts_list_new)
     
-name_pattern = r'^([А-ЯЁа-яё]+)(\s*)(\,?)([А-ЯЁа-яё]+)' \
-                   r'(\s*)(\,?)([А-ЯЁа-яё]*)(\,?)(\,?)(\,?)'
+name_pattern = r'^(\w+)(\s*)(\,?)(\w+)' \
+                   r'(\s*)(\,?)(\w*)(\,?)(\,?)(\,?)'
 name_pattern_new = r'\1\3\10\4\6\9\7\8'
 contacts_list = list() # создаем список
 for page in contacts_list_new:
