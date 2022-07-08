@@ -34,3 +34,4 @@ for item in contacts:
     contact_dict[item[0]] = merge_records(item, contact_dict[item[0]]) if item[0] in contact_dict else item
 
 writing_csv_file(contact_dict.values()) # вызов функции записи в файл
+
